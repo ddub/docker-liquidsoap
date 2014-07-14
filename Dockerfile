@@ -11,4 +11,6 @@ EXPOSE 8000
 
 VOLUME ["/config"]
 
-CMD ["/usr/bin/liquidsoap /config/radio.liq"]
+USER 140
+
+CMD ["/usr/sbin/liquidsoap /config/radio.liq"]
